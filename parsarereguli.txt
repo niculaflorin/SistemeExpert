@@ -1,0 +1,849 @@
+﻿scop@banda_desenata.
+
+regula@1
+lista_premise@(
+tip_coechipier@inutil@
+@!simt_umor@
+@norocos@)
+concluzie@(prefera_echipa@noua@ ,  fc@95@).
+
+
+regula@2
+lista_premise@(
+tip_coechipier@prietenos@
+@!simt_umor@
+@!norocos@)
+concluzie@(prefera_echipa@noua@ , fc@50@).
+
+
+regula@3
+lista_premise@(
+tip_coechipier@prietenos@
+@simt_umor@
+@norocos@)
+concluzie@(prefera_echipa@buna@ , fc@60@).
+
+
+regula@4
+lista_premise@(
+tip_coechipier@sef@
+@!simt_umor@
+@norocos@)
+concluzie@(prefera_echipa@buna@ , fc@80@).
+
+
+regula@5
+lista_premise@(
+tip_coechipier@sef@
+@simt_umor@
+@norocos@)
+concluzie@(prefera_echipa@buna@ , fc@90@).
+
+
+regula@6
+lista_premise@(
+tip_coechipier@erou@
+@!simt_umor@
+@!norocos@)
+concluzie@(prefera_echipa@avansata@ , fc@85@).
+
+
+regula@7
+lista_premise@(
+tip_coechipier@erou@
+@!simt_umor@
+@norocos@)
+concluzie@(prefera_echipa@avansata@ , fc@80@).
+
+
+regula@8
+lista_premise@(
+tip_coechipier@erou@
+@simt_umor@
+@!norocos@)
+concluzie@(prefera_echipa@avansata@ , fc@80@).
+
+
+regula@9
+lista_premise@(
+tip_coechipier@erou@
+@simt_umor@
+@!norocos@)
+concluzie@(prefera_echipa@avansata@ , fc@90@).
+
+
+regula@10
+lista_premise@(
+tip_coechipier@erou@
+@simt_umor@
+@norocos@)
+concluzie@(prefera_echipa@avansata@ , fc@95@).
+
+
+regula@11 
+lista_premise@(
+nivel_actiune@exploziv@
+implicare@mare@
+@simt_umor@
+categorie_carti@scifi@)
+concluzie@(tip_personalitate@team_leader@ , fc@95@).
+
+
+regula@12
+lista_premise@(
+nivel_actiune@exploziv@
+implicare@medie@
+@!simt_umor@
+categorie_carti@scifi@)
+concluzie@(tip_personalitate@team_leader@ , fc@80@).
+
+regula@13
+lista_premise@(
+nivel_actiune@exploziv@
+implicare@mica@
+@!simt_umor@
+categorie_carti@scifi@)
+concluzie@(tip_personalitate@team_leader@ , fc@10@).
+
+regula@14
+lista_premise@(
+nivel_actiune@exploziv@
+implicare@mica@
+@!simt_umor@
+categorie_carti@scifi@)
+concluzie@(tip_personalitate@team_leader@ , fc@5@).
+
+
+
+
+regula@15
+lista_premise@(
+nivel_actiune@exploziv@
+implicare@medie@
+@!simt_umor@
+categorie_carti@scifi@)
+concluzie@(tip_personalitate@team_leader@ , fc@50@).
+
+regula@16
+lista_premise@(
+nivel_actiune@rebel@
+implicare@medie@
+@simt_umor@
+categorie_carti@feminism@)
+concluzie@(tip_personalitate@eroina@ , fc@90@).
+
+
+regula@17
+lista_premise@(
+nivel_actiune@rebel@
+implicare@medie@
+@simt_umor@
+categorie_carti@mister@)
+concluzie@(tip_personalitate@eroina@ , fc@80@).
+
+
+regula@18
+lista_premise@(        
+nivel_actiune@rebel@
+implicare@medie@
+@!simt_umor@
+categorie_carti@scifi@)
+concluzie@(tip_personalitate@eroina@ , fc@50@).
+
+
+regula@19
+lista_premise@(
+nivel_actiune@rebel@
+implicare@mica@
+@!simt_umor@
+categorie_carti@scifi@)
+concluzie@(tip_personalitate@eroina@ , fc@40@).
+
+
+regula@20
+lista_premise@(
+nivel_actiune@moderat@
+implicare@mare@
+@simt_umor@
+categorie_carti@mister@)
+concluzie@(tip_personalitate@detectiv@, fc@90@).
+
+
+regula@21
+lista_premise@(
+nivel_actiune@moderat@
+implicare@medie@
+@simt_umor@
+categorie_carti@mister@)
+concluzie@(tip_personaliate@detectiv@ , fc@80@).
+
+regula@22
+lista_premise@(
+nivel_actiune@moderat@
+implicare@mica@
+@simt_umor@
+categorie_carti@mister@)
+concluzie@(tip_personaliate@detectiv@ , fc@70@).
+
+
+regula@23
+lista_premise@(
+nivel_actiune@moderat@
+implicare@mica@
+@simt_umor@
+categorie_carti@mister@)
+concluzie@(tip_personaliate@detectiv@ , fc@65@).
+
+regula@24
+lista_premise@(
+nivel_actiune@moderat@
+implicare@mica@
+@!simt_umor@
+categorie_carti@mister@)
+concluzie@(tip_personaliate@detectiv@ , fc@60@).
+
+regula@25
+lista_premise@(
+nivel_actiune@linistit@
+implicare@mare@
+@simt_umor@
+categorie_carti@feminism@)
+concluzie@(tip_personaliate@amuzant@ , fc@90@).
+
+
+regula@26
+lista_premise@(
+nivel_actiune@linistit@
+implicare@medie@
+@simt_umor@
+categorie_carti@mister@)
+concluzie@(tip_personaliate@amuzant@ , fc@80@).
+
+regula@27
+lista_premise@(
+nivel_actiune@linistit@
+implicare@mica@
+@simt_umor@
+categorie_carti@feminism@)
+concluzie@(tip_personaliate@amuzant@ , fc@75@).
+
+
+regula@28
+lista_premise@(
+@interes_razboi@
+monstrii@extraterestri@
+nivel_curaj@inalt@)
+concluzie@(nivel_actiune@exploziv@ , fc@90@).
+
+regula@29
+lista_premise@(
+@interes_razboi@
+monstrii@pamanteni@
+nivel_curaj@inalt@)
+concluzie@(nivel_actiune@exploziv@ , fc@85@).
+
+
+regula@30
+lista_premise@(
+@!interes_razboi@
+monstrii@pamanteni@
+nivel_curaj@inalt@)
+concluzie@(nivel_actiune@rebel@ , fc@95@).
+
+
+regula@31
+lista_premise@(
+@!interes_razboi@
+monstrii@pamanteni@
+nivel_curaj@mediu@)
+concluzie@(nivel_actiune@moderat@ , fc@95@).
+
+regula@32
+lista_premise@(
+@!interes_razboi@
+monstrii@pamanteni@
+nivel_curaj@scazut@)
+concluzie@(nivel_actiune@linistit@ , fc@95@).
+
+
+regula@33
+lista_premise@(
+@interes_razboi@
+monstrii@pamanteni@        
+nivel_curaj@inalt@)
+concluzie@(nivel_actiune@rebel@ , fc@85@).
+
+
+regula@34
+lista_premise@(
+@interes_razboi@
+monstrii@extraterestri@
+nivel_curaj@scazut@)
+concluzie@(nivel_actiune@moderat@ , fc@70@).
+
+
+regula@35
+lista_premise@(
+@!interes_razboi@
+monstrii@extraterestrii@
+nivel_curaj@mediu@)
+concluzie@(nivel_actiune@moderat@ , fc@55@).
+
+
+regula@36
+lista_premise@(
+@!peste_16@
+@!maturitate@
+timp_liber@mult@
+implicare@mare@)
+concluzie@(caracteristica_sociala@adolescent_tipic@ , fc@90@).
+
+
+regula@37
+lista_premise@(
+@peste_16@
+@!maturitate@
+timp_liber@mult@
+implicare@mare@
+concluzie@(caracteristica_sociala@adolescent_tipic@ , fc@85@).
+
+regula@38
+lista_premise@(
+@peste_16@
+@!maturitate@
+timp_liber@mult@
+implicare@medie@)
+concluzie@(caracteristica_sociala@adolescent_tipic@ , fc@80@).
+
+
+regula@39
+lista_premise@(
+@peste_16@
+@!maturitate@
+timp_liber@mult@
+implicare@mica@)
+concluzie@(caracteristica_sociala@libertin@ , fc@90@).
+
+
+regula@40
+lista_premise@(
+@peste_16@
+@maturitate@
+timp_liber@putin@
+implicare@mica@)
+concluzie@(caracteristica_sociala@workaholic@ , fc@90@).
+
+
+regula@41
+lista_premise@(
+@peste_16@
+@maturitate@
+timp_liber@putin@
+implicare@medie@)
+concluzie@(caracteristica_sociala@workaholic@ , fc@80@).
+
+
+regula@42
+lista_premise@(
+@!peste_16@
+@!maturitate@
+timp_liber@putin@
+implicare@putin@)
+concluzie@(caracteristica_sociala@morocanos@ , fc@90@).
+
+
+regula@43
+lista_premise@(
+@!peste_16@
+@!maturitate@
+timp_liber@mediu@
+implicare@putin@)
+concluzie@(caracteristica sociala@adolescent_tipic@ , fc@50@).
+
+
+regula@44
+lista_premise@(
+@peste_16@
+@maturitate@
+timp_liber@mult@
+implicare@mare@)
+concluzie@(caracteristica sociala@libertin@ , fc@50@).
+
+
+regula@45
+lista_premise@(
+@peste_16@
+@maturitate@
+timp_liber@putin@
+implicare@medie@)
+concluzie@(caracteristica sociala@workaholic@ , fc@80@).
+
+
+regula@46
+lista_premise@(
+@!lucru_echipa@
+nivel_empatie@scazut@
+implicare@mica@)
+concluzie@(tip_coechipier@inutil@ , fc@90@).
+
+
+regula@47
+lista_premise@(
+@lucru_echipa@
+nivel_empatie@mediu@
+implicare@mica@)
+concluzie@(tip_coechipier@prietenos@ , fc@90@).
+
+
+regula@48
+lista_premise@(
+@lucru_echipa@
+nivel_empatie@mediu@
+implicare@mare@)
+concluzie@(tip_coechipier@sef@ , fc@90@).
+
+
+regula@49
+lista_premise@(
+@lucru_echipa@
+nivel_empatie@inalt@
+implicare@mare@)
+concluzie@(tip_coechipier@erou@ , fc@90@).
+
+
+regula@50
+lista_premise@(
+@lucru_echipa@
+nivel_empatie@medie@
+implicare@mare@)
+concluzie@(tip_coechipier@sef@ , fc@80@).
+
+
+regula@51
+lista_premise@(
+@!lucru_echipa@
+nivel_empatie@mica@
+implicare@mare@)
+concluzie@(tip_coechipier@inutil@ , fc@85@).
+
+
+regula@52
+lista_premise@(
+@lucru_echipa@
+nivel_empatie@mica@
+implicare@mica@)
+concluzie@(tip_coechipier@inutil@ , fc@70@).
+
+
+regula@53
+lista_premise@(
+@!peste_16@
+@interes_vechituri@
+categorie_carti@mister@)
+concluzie@(banda_desenata@Batman(1940)@ , fc@95@).
+
+
+regula@54
+lista_premise@(
+@peste_16@
+@!interes_razboi@
+tip_coechipier@prietenos@)
+concluzie@(banda_desenata@Preacher@ , fc@97@).
+
+
+regula@55
+lista_premise@(
+@peste_16@
+tip_personalitate@detectiv@  
+@!lucru_echipa@)
+concluzie@(banda_desenata@'Coldest Winter'@ , fc@90@).
+
+
+regula@56
+lista_premise@(
+@peste_16@
+tip_personaliate@eroina@
+@lucru_echipa@)
+concluzie@(banda_desenata@'X-Men Gold'@ , fc@90@).
+
+
+regula@57
+lista_premise@(
+@peste_16@
+@interes_razboi@
+monstii@extraterestii@)
+concluzie@(banda_desenata@'Alien:Defiance'@, fc@95@).
+
+
+regula@58
+lista_premise@(
+prefera_echipa@noua@
+@peste_16@
+nivel_actiune@exploziv@)
+concluzie@(banda_desenata@'Suicide Squad'@ , fc@100@).
+
+
+regula@59
+lista_premise@(
+prefera_echipa@avansata@
+@peste_16@
+nivel_actiune@moderat@)
+concluzie@(banda_desenata@'Suicide Squad'@ , fc@60@).
+
+
+regula@60
+lista_premise@(
+tip_personalitate@eroina@
+@peste_16@
+@!lucru_echipa@)
+concluzie@(banda_desenata@'Dejah Thoris'@ , fc@90@).
+
+
+regula@61
+lista_premise@(
+tip_personalitate@amuzant@
+@peste_16@
+@lucru_echipa@)
+concluzie@(banda_desenata@'Dejah Thoris'@ , fc@50@).
+
+
+regula@62
+lista_premise@(
+caracteristica_sociala@adolescent_tipic@
+@simt_umor@
+categorie_carti@scifi@
+monstrii@extraterestii@)
+concluzie@(banda_desenata@'Star Wars(2015)'@ , fc@90@).
+
+
+regula@63
+lista_premise@(
+nivel_actiune@rebel@
+@interes_razboi@
+implicare@medie@)
+concluzie@(banda_desenata@'Star Wars(2015)'@ , fc@70@).
+
+
+regula@64
+lista_premise@(
+nivel_autocunoastere@mediu@
+caracteristica_sociala@adolescent_tipic@
+categorie_carti@feminin@)
+concluzie@(banda_desenata@'Kim Reaper'@ , fc@90@).
+
+
+regula@65
+lista_premise@(
+@simt_umor@
+@!persoana_motivata@
+nivel_empatie@mediu@)
+concluzie@(banda_desenata@'Kim Reaper'@ , fc@60@).
+
+
+regul @66
+lista_premise@(
+@interes_razboi@
+monstrii@extraterestii@ 
+@maturitate@)
+concluzie@
+(banda_desenata@'Kim Reaper'@ , fc@50@).
+
+
+regula@67
+lista_premise@(
+@!maturitate@
+tip_personalitate@team_leader@
+nivel_curaj@inalt@
+@persoana_motivata@)
+concluzie@(banda_desenata@'Teen Titans'@ , fc@90@).
+
+
+regula@68
+lista_premise@(
+tip_coechipier@inutil@
+@maturitate@
+@!simt_umor@)
+concluzie@(banda_desenata@'Teen Titans'@ , fc@40@).
+
+
+regula@69
+lista_premise@(
+caracteristica_sociala@workaholic@
+@interes_razboi@
+activitati_weekend@tehnologie@
+categorie_carti@scifi@)
+concluzie@(banda_desenata@'Larry Blamire's Steam Wars'@ , fc@90@).
+
+
+regula@70
+lista_premise@(
+nivel_actiune@exploziv@
+@interes_vechituri@
+activitate_weekend@tehnologie@   
+categorie_carti@mister@)
+concluzie@(banda_desenata@'Larry Blamire's Steam Wars'@, fc @60@).
+
+
+regula@71
+lista_premise@(
+@!maturitate@
+tip_personalitate@team_leader@
+nivel_curaj@mediu@
+@persoana_motivata@)
+concluzie@(banda_desenata@'Larry Blamire's Steam Wars'@, fc@50@).
+
+
+regula@72
+lista_premise@(
+tip_coechipier@sef@
+monstrii@pamanteni@
+nivel_curaj@inalt@ 
+@!simt_umor@)
+concluzie@(banda_desenata@'The Walking Dead'@ , fc@90@).
+
+
+regula@73
+lista_premise@(
+tip_coechipier@erou@
+monstrii@pamanteni@
+nivel_curaj@inalt@
+@!simt_umor@
+@norocos@)
+concluzie@(banda_desenata@'30 Days of Night: Red Snow'@, fc@90@).
+
+
+regula@74
+lista_premise@(
+tip_coechipier@inutil@ 
+activitati_weekend@relaxare@)
+concluzie@(banda_desenata@'The Walking Dead'@, fc@50@).
+
+
+regula@75
+lista_premise@(
+nivel_curaj@mediu@
+tip_coechipier@prietenos@
+@!norocos@)
+concluzie@(banda_desenata@'30 Days of Night: Red Snow'@ , fc@50@).
+
+
+regula@76
+lista_premise@(
+nivel_autocunoastere@inalt@ 
+@maturitate@
+categorie_carti@feminism@
+caracteristica_sociala@workaholic@)
+concluzie@(banda_desenata@'Ms. Marvel'@ , fc@90@).
+
+
+regula@77 
+lista_premise@(
+activitati_weekend@locuri@
+@interes_vechituri@
+concluzie@(banda_desenata@'Ms. Marvel'@ , fc@60@).
+
+regula@78 
+lista_premise@(
+@simt_umor@
+timp_liber@mult@
+caracteristica_sociala@adolescent_tipic@)
+concluzie@(banda_desenata@'Adventure Time'@ , fc@90@).
+
+
+regula@79
+lista_premise@(
+@!simt_umor@
+timp_liber@putin@
+caracteristica_sociala@adolescent_tipic@)
+concluzie@(banda_desenata@'Adventure Time'@ , fc@70@).
+
+
+regula@80 
+lista_premise@(
+@simt_usor@
+monstrii@extraterestii@
+@!maturitate@
+nivel_actiune@exploziv@)
+concluzie@(banda_desenata@'Deadpool(2008)'@ , fc@90@).
+
+regula@81
+lista_premise@(
+@maturitate@
+caracteristica_sociala@morocanos@
+nivel_empatie@inalt@)
+concluzie@(banda_desenata@'Punisher(1995)'@ , fc@80@).
+
+
+regula@82
+lista_premise@(
+monstrii@extraterestii@ 
+@!norocos@
+implicare@medie@ 
+@lucru_echipa@
+nivel_curaj@mediu@ )
+concluzie@(banda_desenata@'B.P.R.D Hell on Earth: Gods'@ , fc@80@).
+
+
+regula@83
+lista_premise@(
+monstrii@pamanteni@ 
+@norocos@ 
+implicare@medie@ 
+@lucru_echipa@
+nivel_curaj@scazut@)
+concluzie@(banda_desenata@'B.P.R.D Hell on Earth: Gods'@ , fc@50@).
+
+
+regula@84
+lista_premise@(
+nivel_autocunoastere@inalt@
+implicare@mare@
+tip_coechipier@erou@
+@maturitate@)
+concluzie@(banda_desenata@'The Metabaron'@, fc@85@).
+
+
+regula@85
+lista_premise@(
+monstrii@extraterestii@ 
+nivel_actiune@rebel@ 
+@interes_razboi@
+@persoana_motivata@)
+concluzie@(banda_desenata@'The New 52: Futures End'@, fc@90@).
+
+
+intreaba@peste_16
+enunt@'Varsta dumneavoastra este cel putin 16 ani?'
+variante@(
+da ||
+nu
+).
+
+
+intreaba@interes_vechituri
+enunt@'Preferati lucrurile vechi fata de cele noi?'
+variante@(
+da ||
+nu
+).
+
+
+intreaba@interes_razboi
+enunt@'Va intereseaza tema razboiului sau a apocalipsei?'
+variante@(
+da ||
+nu
+).
+
+
+intreaba@simt_umor
+enunt@'Prietenii dumneavoasta v-ar caracteriza ca o persoana cu simtul umorului?'
+variante@(
+da ||
+nu
+).
+
+
+intreaba@categorie_carti
+enunt@'Ce categorie de carti va atrage cel mai mult?'
+variante@( 
+mister ||
+feminism ||
+scifi
+).
+
+
+intreaba@lucru_echipa
+enunt@'Va place sa lucrari in echipa?'
+variante@(
+da ||
+nu
+).
+
+
+intreaba@monstrii
+enunt@'Monstrii pamanteni sau amenintari din alte lumi?'
+variante@( 
+pamanteni ||
+extraterestii
+).
+
+
+intreaba@maturitate
+enunt@'Va place sa fiti cat mai matur si sa va asumati responsabilitati?'
+variante@(
+da ||
+nu
+).
+
+
+intreaba@activitati_weekend
+enunt@'Ce preferati sa faceti sau sa descoperiti in weekend?'
+variante@(
+locuri ||
+tehnologie|| 
+relaxare
+).
+
+
+intreaba@nivel_empatie
+enunt@'Care credeti ca este nivelul dumneavoastra de empatie?'
+variante@(
+scazut ||
+mediu ||
+inalt
+).
+
+
+intreaba@nivel_curaj
+enunt@'Care considerati ca este nivelul dumneavoasta de curaj?'
+variante@(
+scazut ||
+mediu ||
+inalt 
+).
+
+
+intreaba@norocos
+enunt@'De obicei sunteti o persoana norocoasa?'
+variante@(
+da ||
+nu
+).
+
+
+intreaba@nivel_autocunoastere
+enunt@'Care va este nivelul de autocunoastere?'
+variante@(
+scazut ||
+mediu ||
+inalt
+).
+
+
+intreaba@implicare
+enunt@'Cand aveti de lucrat la un proiect cum este implicarea dumneavoastra?'
+variante@(
+mare ||
+medie ||
+mica
+).
+
+
+intreaba@persoana_motivata
+enunt@'Sunteti o persoana motivata?'
+variante@(
+da ||
+nu
+).
+
+
+intreaba@timp_liber
+enunt@'Cat timp liber aveti?'
+variante@(
+mult ||
+mediu ||
+putin
+).
+
+

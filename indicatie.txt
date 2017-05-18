@@ -1,0 +1,1 @@
+scop(A), Scop = av(A,_), if(setof(st(FC, Scop), I^fapt(Scop, FC, I), LF), caz da: afisez LF invers, caz nu: write('Nu am solutii'))
