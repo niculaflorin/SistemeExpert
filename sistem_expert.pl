@@ -48,7 +48,7 @@ un_pas(Rasp,OptiuniUrm,MesajUrm):-scop(Atr),(Rasp \== null,intreaba_acum(Rasp) ;
 
 intreaba_acum(Rasp):-intrebare_curenta(Atr,OptiuniV,MesajV),interogheaza1(Rasp,Atr,MesajV,OptiuniV,Istorie),nl,
 asserta( interogat(av(Atr,_)) ).
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 interogheaza1(X,Atr,Mesaj,[da,nu],Istorie) :-
 !,de_la_utiliz1(X,Istorie,[da,nu]),
 det_val_fc(X,Val,FC),
@@ -147,11 +147,18 @@ executa([iesire]):-!.
 executa([_|_]) :-
 write('Comanda incorecta! '),nl.
 
-%scop(Scop), setof(st(Fc, Scop), I^fapt(Scop, Fc, I), List)
 scopuri_princ :-
-scop(Atr),determina(Atr), afiseaza_scop(Atr),fail.
+scop(Atr),determina(Atr),fail.
+scopuri_princ :- scop(A), Scop = av(A,_), if((setof(st(FC, Scop), I^fapt(Scop, FC, I), LF)),
+											 (afis_inv(LF)), 
+											 (write('Nu am solutii\n'))).
+afis_inv([H|T]) :- afis_inv(T), H = st(FC1, av(S1, So1)), 
+				   write(S1), write(' este '), write(So1), write(' cu factorul de certitudine \n'), write(FC1), write('\n'). 
+afis_inv([]).
+/*
+scopuri_princ :- scop(Atr), determina(Atr),afiseaza_scop(Atr), fail.
 scopuri_princ.
-
+*/
 determina(Atr) :-
 realizare_scop(av(Atr,_),_,[scop(Atr)]),!.
 determina(_).
@@ -174,6 +181,7 @@ realizare_scop(Scop,FC,Istorie),
 Not_FC is - FC, !.
 realizare_scop(Scop,FC,_) :-
 fapt(Scop,FC,_), !.
+realizare_scop(av(Atr, _),FC,_) :- fapt(av(Atr, nu_conteaza), FC, _), !.
 realizare_scop(Scop,FC,Istorie) :-
 pot_interoga(Scop,Istorie),
 !,realizare_scop(Scop,FC,Istorie).
@@ -252,13 +260,13 @@ cum(Scop),
 cum_premise(X).
         
 interogheaza(Atr,Mesaj,[da,nu],Istorie) :-
-!,write(Mesaj),nl,
-de_la_utiliz(X,Istorie,[da,nu]),
+!,write(Mesaj), write(' [da, nu, nu_stiu, nu_conteaza]'),nl,
+de_la_utiliz(X,Istorie,[da, nu, nu_stiu, nu_conteaza]),
 det_val_fc(X,Val,FC),
 asserta( fapt(av(Atr,Val),FC,[utiliz]) ).
 interogheaza(Atr,Mesaj,Optiuni,Istorie) :-
-write(Mesaj),nl,
-citeste_opt(VLista,Optiuni,Istorie),
+write(Mesaj),nl, append(Optiuni, [nu_stiu, nu_conteaza], OptiuniNoi),
+citeste_opt(VLista,OptiuniNoi,Istorie),
 assert_fapt(Atr,VLista).
 
 
@@ -272,7 +280,7 @@ de_la_utiliz(X,Istorie,Lista_opt) :-
 repeat,write(': '),citeste_linie(X),
 proceseaza_raspuns(X,Istorie,Lista_opt).
 
-proceseaza_raspuns([de_ce],Istorie,_) :-                         nl,afis_istorie(Istorie),!,fail.
+proceseaza_raspuns([de_ce],Istorie,_) :- nl,afis_istorie(Istorie),!,fail.
 
 proceseaza_raspuns([X],_,Lista_opt):-
 member(X,Lista_opt).

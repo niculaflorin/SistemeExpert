@@ -304,7 +304,7 @@ lista_premise@(
 @peste_16@
 @!maturitate@
 timp_liber@mult@
-implicare@mare@
+implicare@mare@)
 concluzie@(caracteristica_sociala@adolescent_tipic@ , fc@85@).
 
 regula@38
@@ -358,7 +358,7 @@ lista_premise@(
 @!maturitate@
 timp_liber@mediu@
 implicare@putin@)
-concluzie@(caracteristica sociala@adolescent_tipic@ , fc@50@).
+concluzie@(caracteristica_sociala@adolescent_tipic@ , fc@50@).
 
 
 regula@44
@@ -367,7 +367,7 @@ lista_premise@(
 @maturitate@
 timp_liber@mult@
 implicare@mare@)
-concluzie@(caracteristica sociala@libertin@ , fc@50@).
+concluzie@(caracteristica_sociala@libertin@ , fc@50@).
 
 
 regula@45
@@ -376,7 +376,7 @@ lista_premise@(
 @maturitate@
 timp_liber@putin@
 implicare@medie@)
-concluzie@(caracteristica sociala@workaholic@ , fc@80@).
+concluzie@(caracteristica_sociala@workaholic@ , fc@80@).
 
 
 regula@46
@@ -440,7 +440,7 @@ lista_premise@(
 @!peste_16@
 @interes_vechituri@
 categorie_carti@mister@)
-concluzie@(banda_desenata@Batman(1940)@ , fc@95@).
+concluzie@(banda_desenata@Batman(1940)@ , fc@100@).
 
 
 regula@54
@@ -540,13 +540,12 @@ nivel_empatie@mediu@)
 concluzie@(banda_desenata@'Kim Reaper'@ , fc@60@).
 
 
-regul @66
+regula@66
 lista_premise@(
 @interes_razboi@
 monstrii@extraterestii@ 
 @maturitate@)
-concluzie@
-(banda_desenata@'Kim Reaper'@ , fc@50@).
+concluzie@(banda_desenata@'Kim Reaper'@ , fc@50@).
 
 
 regula@67
@@ -565,14 +564,13 @@ tip_coechipier@inutil@
 @!simt_umor@)
 concluzie@(banda_desenata@'Teen Titans'@ , fc@40@).
 
-
 regula@69
 lista_premise@(
 caracteristica_sociala@workaholic@
 @interes_razboi@
 activitati_weekend@tehnologie@
 categorie_carti@scifi@)
-concluzie@(banda_desenata@'Larry Blamire's Steam Wars'@ , fc@90@).
+concluzie@(banda_desenata@'Larry Blamire s Steam Wars'@ , fc@90@).
 
 
 regula@70
@@ -581,7 +579,7 @@ nivel_actiune@exploziv@
 @interes_vechituri@
 activitate_weekend@tehnologie@   
 categorie_carti@mister@)
-concluzie@(banda_desenata@'Larry Blamire's Steam Wars'@, fc @60@).
+concluzie@(banda_desenata@'Larry Blamire s Steam Wars'@, fc @60@).
 
 
 regula@71
@@ -590,7 +588,7 @@ lista_premise@(
 tip_personalitate@team_leader@
 nivel_curaj@mediu@
 @persoana_motivata@)
-concluzie@(banda_desenata@'Larry Blamire's Steam Wars'@, fc@50@).
+concluzie@(banda_desenata@'Larry Blamire s Steam Wars'@, fc@50@).
 
 
 regula@72
@@ -627,6 +625,7 @@ tip_coechipier@prietenos@
 concluzie@(banda_desenata@'30 Days of Night: Red Snow'@ , fc@50@).
 
 
+
 regula@76
 lista_premise@(
 nivel_autocunoastere@inalt@ 
@@ -639,7 +638,7 @@ concluzie@(banda_desenata@'Ms. Marvel'@ , fc@90@).
 regula@77 
 lista_premise@(
 activitati_weekend@locuri@
-@interes_vechituri@
+@interes_vechituri@)
 concluzie@(banda_desenata@'Ms. Marvel'@ , fc@60@).
 
 regula@78 
@@ -702,7 +701,6 @@ tip_coechipier@erou@
 @maturitate@)
 concluzie@(banda_desenata@'The Metabaron'@, fc@85@).
 
-
 regula@85
 lista_premise@(
 monstrii@extraterestii@ 
@@ -710,7 +708,6 @@ nivel_actiune@rebel@
 @interes_razboi@
 @persoana_motivata@)
 concluzie@(banda_desenata@'The New 52: Futures End'@, fc@90@).
-
 
 intreaba@peste_16
 enunt@'Varsta dumneavoastra este cel putin 16 ani?'
@@ -754,7 +751,7 @@ scifi
 
 
 intreaba@lucru_echipa
-enunt@'Va place sa lucrari in echipa?'
+enunt@'Va place sa lucrati in echipa?'
 variante@(
 da ||
 nu
@@ -845,5 +842,9 @@ mult ||
 mediu ||
 putin
 ).
+
+
+
+
 
 

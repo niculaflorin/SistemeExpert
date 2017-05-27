@@ -1,0 +1,14 @@
+1.nu
+2.scazut
+3.da
+4.nu
+5.pamanteni
+6.mediu
+7.mare
+8.nu
+9.da
+10.scazut
+11.mult
+12.locuri
+13.nu
+14.nu

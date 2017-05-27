@@ -1,1 +1,6 @@
-scop(A), Scop = av(A,_), if(setof(st(FC, Scop), I^fapt(Scop, FC, I), LF), caz da: afisez LF invers, caz nu: write('Nu am solutii'))
+scop(A), Scop = av(A,_), if((setof(st(FC, Scop), I^fapt(Scop, FC, I), LF)), (list_rev(LF,L), afis_S(L)), (write('Nu am solutii')))
+puse in conditia de oprire la scopuri_princ
+sterge afiseaza de mai sus.
+list_rev([H|T], L):- list_rev(T, L1), append(L1, [H], L). 
+list_rev([],[]).
+afis_S([H|T]):- afiseaza_scop()

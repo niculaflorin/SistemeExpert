@@ -432,20 +432,15 @@ lista_premise@(
 @lucru_echipa@
 nivel_empatie@mica@
 implicare@mica@)
-concluzie@(tip_coechipier@inutil@ , fc@70@).regula@72
-lista_premise@(
-tip_coechipier@sef@
-monstrii@pamanteni@
-nivel_curaj@inalt@ 
-@!simt_umor@)
-concluzie@(banda_desenata@'The Walking Dead'@ , fc@90@).
+concluzie@(tip_coechipier@inutil@ , fc@70@).
+
 
 regula@53
 lista_premise@(
 @!peste_16@
 @interes_vechituri@
 categorie_carti@mister@)
-concluzie@(banda_desenata@Batman(1940)@ , fc@95@).
+concluzie@(banda_desenata@Batman(1940)@ , fc@100@).
 
 
 regula@54
@@ -756,7 +751,7 @@ scifi
 
 
 intreaba@lucru_echipa
-enunt@'Va place sa lucrari in echipa?'
+enunt@'Va place sa lucrati in echipa?'
 variante@(
 da ||
 nu
