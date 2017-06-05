@@ -1,7 +1,8 @@
-
+﻿
 :-use_module(library(lists)).
 :-use_module(library(system)).
 :-use_module(library(file_systems)).
+:-use_module(library(process)).
 :-op(900,fy,not).
 :-dynamic fapt/3.
 :-dynamic interogat/1.
@@ -133,8 +134,8 @@ nl,nl,write('|: '),citeste_linie([H|T]),
 executa([H|T]), H == iesire.
 
 executa([incarca]) :- 
-incarca,!,nl,
-write('Fisierul dorit a fost incarcat'),nl.
+incarca, incarca_solutii, !,nl,
+write('Fisierele dorite au fost incarcate'),nl.
 executa([consulta]) :- 
 scopuri_princ,!.
 executa([reinitiaza]) :- 
@@ -150,11 +151,16 @@ write('Comanda incorecta! '),nl.
 scopuri_princ :-
 scop(Atr),determina(Atr),fail.
 scopuri_princ :- scop(A), Scop = av(A,_), if((setof(st(FC, Scop), I^fapt(Scop, FC, I), LF)),
-											 (afis_inv(LF)), 
+											 (afis_inv(LF), detalii_solutii), 
 											 (write('Nu am solutii\n'))).
 afis_inv([H|T]) :- afis_inv(T), H = st(FC1, av(S1, So1)), 
 				   write(S1), write(' este '), write(So1), write(' cu factorul de certitudine \n'), write(FC1), write('\n'). 
 afis_inv([]).
+
+detalii_solutii :- write('Vreti mai multi detalii despre solutiile optinute?\n'), nl, 
+		if(file_exists('C:/Program Files (x86)/Google/Chrome/Application/chrome.exe'),
+          (process_create('C:/Program Files (x86)/Google/Chrome/Application/chrome.exe', [file('C:/Users/Bianca/Documents/SICSTUS/TEME/SistemeExpert-master/index.html')])),
+		(write('Nu exista chrome.exe\n'))).
 /*
 scopuri_princ :- scop(Atr), determina(Atr),afiseaza_scop(Atr), fail.
 scopuri_princ.
@@ -358,6 +364,16 @@ incarca_reguli :-
 repeat,citeste_propozitie(L),
 proceseaza(L),L == [end_of_file],nl.
 
+incarca_solutii :- 
+write('Introduceti numele fisierului pentru solutii care doriti sa fie incarcat: '),nl, write('|:'),read(F),
+file_exists(F),!,write('fisier citit'), !.
+%file_exists(F),!,see(F), incarca_solutii_citire, seen, !.
+
+incarca_solutii:-write('Nume incorect de fisier! '),nl,fail.
+
+%incarca_solutii_citire :- repeat, citeste_descriere(L),
+%						proceseaza(L), L == [end_of_file], nl. 
+
 proceseaza([end_of_file]):-!.
 proceseaza(L) :-
 trad(R,L,[]),assertz(R), !.
@@ -399,6 +415,9 @@ rest_cuvinte_linie(Car,[]) :-(Car==13;Car==10), !.
 rest_cuvinte_linie(Car,[Cuv1|Lista_cuv]) :-
 citeste_cuvant(Car,Cuv1,Car1),      
 rest_cuvinte_linie(Car1,Lista_cuv).
+
+citeste_descriere([Cuv|Lista_cuv]) :- get_code(Car),citeste_cuvant(Car, Cuv, Car1), 
+rest_cuvinte_propozitie(Car1, Lista_cuv). 
 
 citeste_propozitie([Cuv|Lista_cuv]) :-
 get_code(Car),citeste_cuvant(Car, Cuv, Car1), 
