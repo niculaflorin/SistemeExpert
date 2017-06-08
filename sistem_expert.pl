@@ -150,8 +150,8 @@ write('Comanda incorecta! '),nl.
 
 scopuri_princ :-
 scop(Atr),determina(Atr),fail.
-scopuri_princ :- scop(A), Scop = av(A,_), if((setof(st(FC, Scop), I^fapt(Scop, FC, I), LF)),
-											 (afis_inv(LF), detalii_solutii), 
+scopuri_princ :- scop(A), Scop = av(A,_),create_dir , if((setof(st(FC, Scop), I^fapt(Scop, FC, I), LF)),
+											 (afis_inv(LF),create_fis(LF), detalii_solutii), 
 											 (write('Nu am solutii\n'))).
 afis_inv([H|T]) :- afis_inv(T), H = st(FC1, av(S1, So1)), 
 				   write(S1), write(' este '), write(So1), write(' cu factorul de certitudine \n'), write(FC1), write('\n'). 
@@ -165,6 +165,17 @@ detalii_solutii :- write('Vreti mai multi detalii despre solutiile optinute?\n')
 scopuri_princ :- scop(Atr), determina(Atr),afiseaza_scop(Atr), fail.
 scopuri_princ.
 */
+create_dir :- if((file_exists('output_benzi_desenate')), 
+				 (delete_directory('output_benzi_desenate'), make_directory('output_benzi_desenate')),
+				 (make_directory('output_benzi_desenate'))).
+
+create_fis(LF) :- now(D),
+			  open('output_benzi_desenate/log_solutii.txt', write, Stream),
+			  write(Stream, D),
+			  write(Stream, '\n'),
+			  write(Stream, LF),
+			  close(Stream).
+
 determina(Atr) :-
 realizare_scop(av(Atr,_),_,[scop(Atr)]),!.
 determina(_).
@@ -510,3 +521,5 @@ caractere_in_interiorul_unui_cuvant(C):-
 C>64,C<91;C>47,C<58;
 C==45;C==95;C>96,C<123.
 caracter_numar(C):-C<58,C>=48.
+
+
