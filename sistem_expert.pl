@@ -94,16 +94,21 @@ scopuri_princ(Stream) :-
 	scop(Atr),determina(Stream,Atr),fail.
 	
 scopuri_princ(Stream) :- scop(A), Scop = av(A,_), create_dir , if((setof(st(FC, Scop), I^fapt(Scop, FC, I), LF)),
-																  (afis_inv(LF),create_fis(LF), detalii_solutii), 
-																  (write('Nu am solutii\n'))).
+																  (afis_inv(Stream,LF),create_fis(LF), detalii_solutii), 
+																  (write('s(Nu am solutii)\n'))).
 											 
 determina(Stream,Atr) :- realizare_scop(Stream,av(Atr,_),_,[scop(Atr)]),!.
 
 determina(_,_).
+
+afis_inv(Stream, [H|T]) :- afis_inv(T), H = st(FC1, av(S1, So1)), 
+						   FC1 >= 20,format(Stream,"s(~p este ~p cu fc ~p)",[S1,So1, FC1]),
+						   nl(Stream),flush_output(Stream),fail. 
+afis_inv(_, []).
 %%%	
 										 
 afis_inv([H|T]) :- afis_inv(T), H = st(FC1, av(S1, So1)), 
-				   write(S1), write(' este '), write(So1), write(' cu factorul de certitudine \n'), write(FC1), write('\n'). 
+				   FC1 >= 20,format(Stream,"s(~p este ~p cu fc ~p)",[S1,So1, FC1]), write('\n'). 
 afis_inv([]).
 
 detalii_solutii :- write('Vreti mai multi detalii despre solutiile optinute?\n'), nl, 
@@ -285,7 +290,7 @@ cum_premise([Scop|X]) :-
 	cum(Scop),
 	cum_premise(X).
         
-interogheaza(Atr,Mesaj,[da,nu],Istorie) :-
+interogheaza(Atr,Mesaj,[da,nu, nu_stiu, nu_conteaza],Istorie) :-
 	!,write(Mesaj), write(' [da, nu, nu_stiu, nu_conteaza]'),nl,
 	de_la_utiliz(X,Istorie,[da, nu, nu_stiu, nu_conteaza]),
 	det_val_fc(X,Val,FC),
@@ -297,10 +302,10 @@ interogheaza(Atr,Mesaj,Optiuni,Istorie) :-
 	assert_fapt(Atr,VLista).
 
 %%%pentru interfata
-interogheaza(Stream,Atr,Mesaj,[da,nu],Istorie) :-
+interogheaza(Stream,Atr,Mesaj,[da,nu, nu_stiu, nu_conteaza],Istorie) :-
 	!,write(Stream,i(Mesaj)),nl(Stream), flush_output(Stream),
 	write('\n Intrebare atr boolean\n'),
-	write(Stream, '(da nu)'), nl(Stream), flush_output(Stream),
+	write(Stream, '(da, nu, nu_stiu, nu_conteaza)'), nl(Stream), flush_output(Stream),
 	de_la_utiliz(Stream,X,Istorie,[da,nu, nu_stiu, nu_conteaza]),
 	det_val_fc(X,Val,FC),
 	asserta( fapt(av(Atr,Val),FC,[utiliz]) ).
